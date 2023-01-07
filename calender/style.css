@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    border: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+}
+nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    font-size: 1.5rem;
+    width:5rem;
+}
+main{
+    width: 100vw;
+    display: grid;
+    gap:0.3em;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0em;
+}
+.monthHead{
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+.month{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+li{
+    font-size: 1rem;
+    text-align: center;
+    list-style: none;
+    padding: 0.2rem;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(80, 80, 80);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+     /* creates padding around scroll thumb */
+  }
