@@ -1,0 +1,69 @@
+body{
+    background-color: #5e548e;
+}
+.main-container{
+    width:70vw;
+    height: fit-content;
+    margin:0 auto;
+    background-color: #5e548e;
+    display: grid;
+    grid-template-rows: repeat(1fr,3);
+    gap: 1em;
+}
+h1{
+    color:#e27cdd;
+    font-family: "Helvetica Neue",Helvetica,Arial
+}
+.sub-item{
+    height: 100px;
+    width: 100%;
+    background-color: #5c4c8d;
+}
+.input{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.output{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.sub-item > input{
+    width: 90%;
+    height: 90%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-inline: 1.2rem;
+    color: #ccf7e8;
+}
+.text-output{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-inline: 1.2rem;
+    color: #ccf7e8;
+}
+.sub-item >  input:focus-visible{
+    border: none;
+    outline: none;
+    
+}
+.sub-item > input::placeholder{
+    color: #ccf7e8;
+}
+.sub-item > button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #ccf7e8;
+}   
+.sub-item > button:hover{
+    cursor: pointer;
+    background-color: #473a6d;
+}
+.sub-item > button:active{
+    background-color: #493c70;
+}
