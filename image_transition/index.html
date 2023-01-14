@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+      .main {
+        height: 100%;
+        width: 350px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+      }
+      img {
+        height: auto;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="image_container">
+        <img src="../images/roger-ce-9WbvAzsgtEs-unsplash.jpg" alt="uno" />
+      </div>
+      <div class="text">
+        <h1>Hover the mouse above the image to see the transition</h1>
+      </div>
+    </div>
+    <script>
+      let image_container = document.querySelector("img");
+      image_container.addEventListener("mouseover", (e) => {
+        e.target.src = "../images/roger-ce-gGicXuU6DLQ-unsplash.jpg";
+      });
+      image_container.addEventListener("mouseleave", (e) => {
+        e.target.src = "../images/roger-ce-9WbvAzsgtEs-unsplash.jpg";
+      });
+    </script>
+  </body>
+</html>
