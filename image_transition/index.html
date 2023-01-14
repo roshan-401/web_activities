@@ -35,9 +35,13 @@
       let image_container = document.querySelector("img");
       image_container.addEventListener("mouseover", (e) => {
         e.target.src = "../images/roger-ce-gGicXuU6DLQ-unsplash.jpg";
+        document.querySelector(".text").children[0].textContent =
+          "leave your mouse to show previous image";
       });
       image_container.addEventListener("mouseleave", (e) => {
         e.target.src = "../images/roger-ce-9WbvAzsgtEs-unsplash.jpg";
+        document.querySelector(".text").children[0].textContent =
+          "Hover the mouse above the image to see the transition";
       });
     </script>
   </body>
