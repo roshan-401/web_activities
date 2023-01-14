@@ -64,4 +64,6 @@ function renderCalender(y) {
 
   }
 
-renderCalender(2022)
+let d = new Date()
+document.querySelector('input').value = d.getFullYear()
+renderCalender(d.getFullYear())
